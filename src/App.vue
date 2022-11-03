@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <button @click="throwError">Throw error</button>
 </template>
 
 <script>
@@ -10,6 +11,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+    methods: {
+    throwError() {
+      throw new Error('Sentry Error');
+    }
   }
 }
 </script>
