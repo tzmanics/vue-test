@@ -1,4 +1,5 @@
 <template>
+  <h2>Oh Hello THere!</h2>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <button @click="throwError">Throw error</button>
